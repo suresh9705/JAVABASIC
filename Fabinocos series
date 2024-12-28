@@ -1,0 +1,25 @@
+import java.util.*;
+class Main{
+    
+    public static void fabinoc()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the first Number");
+        int a=sc.nextInt();
+        System.out.println("Enter the Second Number");
+        int b=sc.nextInt();
+        int c;
+        System.out.print(a+" "+b+" ");
+        for(int i=3;i<=100;i++)
+        {
+            c=a+b;
+            System.out.print(c+" ");
+            a=b;
+            b=c;
+        }
+    }
+    public static void main (String[] args) {
+        fabinoc();
+    }
+    
+}
