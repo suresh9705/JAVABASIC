@@ -1,0 +1,29 @@
+import java.util.*;
+class Main{
+    
+    public static void palindrom()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the first Number");
+        int a=sc.nextInt();
+        int sum=0;
+       int num=a;
+       while(num>0)
+       {
+           int r=num%10;
+           sum=sum*10+r;
+           num/=10;
+       }
+       if(a==sum)
+       {
+           System.out.print(a+ " is a palindom");
+       }
+       else{
+           System.out.println(a+" is not palindrom");
+       }
+    }
+    public static void main (String[] args) {
+        palindrom();
+    }
+    
+}
