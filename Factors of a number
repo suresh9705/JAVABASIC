@@ -1,0 +1,23 @@
+import java.util.*;
+class Main{
+    
+    public static void Factors()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the first Number");
+        int a=sc.nextInt();
+    String factor=" ";
+       for(int i=1;i<=a;i++)
+       {
+           if(a%i==0)
+           {
+               factor+=i+" ";
+           }
+       }
+       System.out.print("factros of "+a+" is "+factor);
+    }
+    public static void main (String[] args) {
+        Factors();
+    }
+    
+}
