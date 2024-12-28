@@ -1,0 +1,115 @@
+import java.util.*;
+public class Main{
+    public static void isprime()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number");
+        int x=sc.nextInt();
+       int num=x;
+       int d=0;
+       int y=x;
+       int sum=0;
+       while(num>0)
+       { 
+           d++;
+           num/=10;
+           
+       }
+       while(y!=0)
+       {
+           int r=y%10;
+           sum+=r*r*r;
+           y/=10;
+       }
+      if(sum==x)
+      {
+          System.out.println(x+" is a ArmStrong Number");
+      }
+      else{
+          System.out.println(x+" is Not ArmStrong Number");
+      }
+    }
+    public static void main (String[] args) {
+    isprime();
+       
+    }
+}
+
+
+//Second Model
+import java.util.*;
+public class Main{
+    public static void isprime()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number");
+        int x=sc.nextInt();
+       int num=x;
+       int d=0;
+       int y=x;
+       int sum=0;
+       while(num>0)
+       { 
+           d++;
+           num/=10;
+           
+       }
+       while(y!=0)
+       {
+           int r=y%10;
+           sum+=Math.pow(r,d);
+           y/=10;
+       }
+      if(sum==x)
+      {
+          System.out.println(x+" is a ArmStrong Number");
+      }
+      else{
+          System.out.println(x+" is Not ArmStrong Number");
+      }
+    }
+    public static void main (String[] args) {
+    isprime();
+       
+    }
+}
+//For Rangne of the Numbers
+
+
+import java.util.*;
+public class Main{
+    public static void isprime()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number");
+        int x=sc.nextInt();
+     
+       for(int i=1;i<=x;i++){
+         int num=i;
+       int d=0;
+       int y=i;
+       int sum=0;
+       while(num>0)
+       { 
+           d++;
+           num/=10;
+           
+       }
+       while(y!=0)
+       {
+           int r=y%10;
+           sum+=Math.pow(r,d);
+           y/=10;
+       }
+      if(sum==i)
+      {
+          System.out.println(i+" is a ArmStrong Number");
+      }
+      
+       }
+    }
+    public static void main (String[] args) {
+    isprime();
+       
+    }
+}
