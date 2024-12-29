@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Main{
+     private static void  perfectNumber()
+     {
+         Scanner sc=new Scanner(System.in);
+         System.out.println("Enter a Number");
+         int i=sc.nextInt();
+         for(int j=1;j<=i;j++)
+         {
+             if(j*j==i)
+             {
+                 System.out.println(i+" is a perfect Square");
+             }
+         }
+     }
+    public static void main(String[] args)
+    {
+       perfectNumber();
+      System.out.println("Hello world");
+    }
+}
