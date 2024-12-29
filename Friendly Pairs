@@ -1,0 +1,37 @@
+import java.util.Scanner;
+class Main{
+     private static void  FriendlyPairs()
+     {
+         Scanner sc=new Scanner(System.in);
+         System.out.println("Enter a  Number");
+         int a=sc.nextInt();
+         System.out.println("Enter a Senod Number");
+         int b=sc.nextInt();
+         int sum1=generateSum(a);
+         int sum2=generateSum(b);
+         
+         if(a/sum1==b/sum2)
+         {
+             System.out.println(a+" "+b+" are friendly pair");
+         }
+         else
+         {
+             System.out.println(a+" "+b+" are not friendly Pairs");
+         }
+     }
+        private static int generateSum(int x)
+        {
+           
+            int sum=0;
+         for(int i=1;i<x;i++)
+         {
+             sum+=i;
+         }
+            return sum;
+        }
+     
+    public static void main(String[] args)
+    {
+      FriendlyPairs();
+    }
+}
