@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class Main{
+     private static void  AboundantNumber()
+     {
+         Scanner sc=new Scanner(System.in);
+         System.out.println("Enter a   Number");
+         int i=sc.nextInt();
+         int sum=0;
+         for(int j=1;j<i;j++)
+         {
+             if(i%j==0)
+             {
+              sum+=j;
+             }
+         }
+         System.out.println("Sum is: "+sum);
+         if(sum>i)
+         System.out.println(i+" is a abondant Number");
+         else
+         System.out.println(i+ "is not a abondant Number");
+         System.out.println("Difference is : "+(sum-i));
+     }
+    public static void main(String[] args)
+    {
+       AboundantNumber();
+    }
+}
