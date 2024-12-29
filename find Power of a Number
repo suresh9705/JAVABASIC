@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Main{
+     private static void  PowerNumber()
+     {
+         Scanner sc=new Scanner(System.in);
+         System.out.println("Enter a base  Number");
+         int i=sc.nextInt();
+         System.out.println("Enter a Number to caluculate exponent");
+         int x=sc.nextInt();
+         int power=1;
+         for(int k=1;k<=x;k++)
+         {
+             power*=i;
+         }
+         System.out.println("Power is : "+power);
+     }
+    public static void main(String[] args)
+    {
+       PowerNumber();
+    }
+}
