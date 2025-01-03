@@ -1,0 +1,14 @@
+import java.util.*;
+class Main{
+    private static void meth1()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Entre A Character");
+        char c=sc.next().charAt(0);
+        int i=c;
+        System.out.println("Ascii Value of c: "+i);
+    }
+    public static void main (String[] args) {
+        meth1();
+    }
+}
