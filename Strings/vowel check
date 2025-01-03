@@ -1,0 +1,18 @@
+import java.util.*;
+class Main{
+    private static void meth1()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Entre A Character");
+        char c=sc.next().charAt(0);
+       if(c=='a'||c=='e'||c=='i'|c=='o'||c=='u'||c=='A'||c=='E'||c=='I'||c=='O'||c=='U')
+       {
+           System.out.println(c+" is a Voweel");
+       }
+       else
+       System.out.println(c+"is not a vowel");
+    }
+    public static void main (String[] args) {
+        meth1();
+    }
+}
