@@ -16,3 +16,24 @@ class Main{
         meth1();
     }
 }
+
+Another Way
+
+  public static void meth2()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a Character");
+        char c=sc.next().charAt(0);
+        String s="aeiouAEIOU";
+        if(s.indexOf(c)!=-1)
+        {
+            System.out.println(c+" is a vowel");
+        }
+        else{
+            System.out.println(c+" is not a Vowel");
+        }
+    }
+    public static void main (String[] args) {
+        meth2();
+    }
+}
