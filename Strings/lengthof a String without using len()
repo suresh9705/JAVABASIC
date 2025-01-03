@@ -1,0 +1,18 @@
+import java.util.*;
+class Main{
+    private static void meth1()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Entre A Character");
+      int len=0;
+      String s="ramudu manchim baludu";
+      for(char c: s.toCharArray())
+      {
+          len++;
+      }
+      System.out.println("lengtyh: "+len);
+    }
+    public static void main (String[] args) {
+        meth1();
+    }
+}
