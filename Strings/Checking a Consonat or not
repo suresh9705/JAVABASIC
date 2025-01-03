@@ -1,0 +1,27 @@
+import java.util.*;
+class Main{
+    private static void meth1()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Entre A Character");
+        char c=sc.next().charAt(0);
+        String s="aeiouAEIOU";
+      if(Character.isLetter(c))
+      {
+          if(s.indexOf(c)==-1)
+          {
+              System.out.println(c+" is not a Vowel");
+          }
+          else{
+              System.out.println(c+" is a vowel");
+          }
+      }
+      else{
+          System.err.println("Please a valid Input  ");
+      }
+    }
+    
+    public static void main (String[] args) {
+        meth1();
+    }
+}
